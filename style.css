@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 200px) {
+ 
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+  } 
+
+  h3 {
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    position: absolute;
+    height: 25px;
+    left: 24px;
+    top: 2px;
+  }
+
+  img {
+    width: 200px;
+  }
+
+  h1 {
+    padding: 1rem;
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    color: #333333;
+  }
+
+  p {
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #4F4F4F;
+    padding: 1rem;
+  }
+
+  button {
+    grid-row: 3;
+    width: 216px;
+    height: 68px;
+    background: #333333;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem;
+    font-size: 10px;
+  }
+  footer a img{
+    width: 20px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .text {
+    display: grid; /*aqui se uso display grid para separar en dos columnas aunque la primera columna siempre quedara vacia, se supone que iba la imagen en la primera columna */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 3rem 1rem;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 24px;
+    padding: 1rem 1rem 10rem 2rem;
+  }
+
+  img { /* este elemento fue dificil de ubicar sin posicion absoluta de otra forma debia ser muy pequeña la imagen*/
+    position: absolute;
+    width: 600px;
+    z-index: -1; /*el z-index simplemente se uso para que la imagen quede siempre detras del texto */
+  }
+
+  h1 {
+    grid-column: 2; /*ubica el elemento en la segunda columna*/
+    /* Ubica el encabezado principal en ambas columnas */
+    grid-row: 1;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 64px;
+  }
+
+  p {
+    grid-column: 2 / span 1;
+    /* Ubica el párrafo en ambas columnas */
+    font-size: 22px;
+  }
+
+  button {
+    grid-column: 2;
+    /* Ubica el botón en ambas columnas */
+    grid-row: 3;
+    width: 216px;
+    height: 68px;
+  }
+  footer {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  h3 {
+    font-weight: 700;
+    font-size: 24px;
+    padding: 1rem 1rem 10rem 2rem;
+  }
+
+  img {
+    position: absolute;
+    width: 750px;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 74px;
+  }
+
+  p {
+    grid-column: 2 / span 1;
+    /* Ubica el párrafo en ambas columnas */
+    font-size: 20px;
+  }
+
+  button {
+    grid-column: 2;
+    /* Ubica el botón en ambas columnas */
+    grid-row: 3;
+    width: 316px;
+    height: 78px;
+    font-size: 18px;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem;
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  h3 {
+    font-weight: 700;
+    font-size: 24px;
+    padding: 1rem 1rem 10rem 2rem;
+  }
+
+  img {
+    position: absolute;
+    width: 900px;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 104px;
+    line-height: 94px;
+    padding: 1rem;
+  }
+
+  p {
+    grid-column: 2 / span 1;
+    /* Ubica el párrafo en ambas columnas */
+    font-size: 40px;
+  }
+
+  button {
+    grid-column: 2;
+    /* Ubica el botón en ambas columnas */
+    grid-row: 3;
+    width: 316px;
+    height: 78px;
+    font-size: 22px;
+  }
+  footer p{
+    padding: 2rem;
+    font-size: 18px;
+  }
+  footer a img{
+    width: 40px;
+  }
+}
+
