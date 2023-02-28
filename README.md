@@ -18,7 +18,8 @@ Logo image: Freepik
 Images used in the history section: Freepik
 Fonts: Google Fonts
 CSS styling: style.css
-
+## dev Challenge
+[Reto Error 404] (https://devchallenges.io/challenges/wBunSb7FPrIepJZAg0sY)
 ## License
 This project is licensed under the MIT License; see the LICENSE file for more details.
 
@@ -45,6 +46,9 @@ Logo image: Freepik
 Images used in the history section: Freepik
 Fonts: Google Fonts
 CSS styling: style.css
+
+## Reto dev 
+[Reto Error 404] (https://devchallenges.io/challenges/wBunSb7FPrIepJZAg0sY)
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
