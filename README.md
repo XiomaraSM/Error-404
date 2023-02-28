@@ -23,4 +23,4 @@ CSS styling: style.css
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## VISITA EL DESPLIEGUE DE ESTE SITIO WEB 
-[Visita la web Tributo](https://web-error-404.netlify.app/)
+[Visita la pagina Error 404](https://web-error-404.netlify.app/)
